@@ -1,9 +1,9 @@
 /**
  * Validation locales.
  */
-const VALIDATION = {
+const EN_VALIDATION = {
   REQUIRED: 'This field is required',
   NUMBER: 'Must be a number'
 };
 
-export default VALIDATION;
+export default EN_VALIDATION;

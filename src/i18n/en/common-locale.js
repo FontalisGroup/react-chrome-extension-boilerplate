@@ -1,10 +1,10 @@
 /**
  * Locales that are often shared between components.
  */
-const COMMON = {
+const EN_COMMON = {
   SUBMIT: 'Submit',
   SEND: 'Send',
   LOADING: 'Loading...'
 };
 
-export default COMMON;
+export default EN_COMMON;

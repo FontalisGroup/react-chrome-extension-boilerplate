@@ -1,24 +1,13 @@
-import COMMON from './en/common-locale';
-import ERROR from './en/errors-locale';
-import VALIDATION from './en/validation-locale';
+import EN_COMMON from './en/common-locale';
+import EN_ERROR from './en/errors-locale';
+import EN_VALIDATION from './en/validation-locale';
+import EN_AUTH from './en/auth-locale';
+import EN_NAVIGATION from './en/navigation-locale';
 
 export default {
-  COMMON,
-  ERROR,
-  VALIDATION,
-  AUTH: {
-    LABEL_EMAIL: 'Email address',
-    PLACEHOLDER_EMAIL: 'Email address',
-    LABEL_PASSWORD: 'Password',
-    PLACEHOLDER_PASSWORD: 'Password',
-    SUBMIT: 'Sign in',
-    SIGN_IN_DESCRIPTION: 'Sign in description',
-    LOGOUT_TEXT: 'Log out',
-    FORGOT_PASSWORD: 'forgot password?'
-  },
-  NAVIGATION: {
-    HOME_PAGE: 'Home',
-    DASHBOARD_PAGE: 'Dashboard',
-    ABOUT_PAGE: 'About'
-  }
+  COMMON: EN_COMMON,
+  ERROR: EN_ERROR,
+  VALIDATION: EN_VALIDATION,
+  AUTH: EN_AUTH,
+  NAVIGATION: EN_NAVIGATION
 };
