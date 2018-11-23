@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { requestLogOut } from '../../../redux/actions/userActions';
@@ -21,6 +22,10 @@ class LogoutComponent extends Component {
     );
   }
 }
+
+LogoutComponent.propTypes = {
+  requestLogOut: PropTypes.func
+};
 
 const mapDispatchToProps = dispatch => bindActionCreators({ requestLogOut }, dispatch);
 

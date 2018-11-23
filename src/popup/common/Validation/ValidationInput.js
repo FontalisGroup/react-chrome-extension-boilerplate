@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import composeValidation from '../../../validation/composeValidation';
 import classNames from 'classnames';
 
@@ -47,5 +48,13 @@ class ValidationInput extends Component {
     );
   }
 }
+
+ValidationInput.propTypes = {
+  externalError: PropTypes.string,
+  validate: PropTypes.array(PropTypes.func),
+  name: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func
+};
 
 export default ValidationInput;

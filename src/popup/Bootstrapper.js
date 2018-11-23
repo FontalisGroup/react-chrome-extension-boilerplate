@@ -1,8 +1,9 @@
 /**
- * Everything that needs to be loaded before the app
+ * Everything that needs to be loaded before the app can be used.
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -43,6 +44,11 @@ class Bootstrapper extends React.Component {
     return isLoadingFinished ? this.props.children : 'Loading...';
   }
 }
+
+Bootstrapper.propTypes = {
+  isAuthenticated: PropTypes.bool,
+  authenticateUser: PropTypes.func
+};
 
 const mapStateToProps = state => ({
   isAuthenticated: state.user.authenticated

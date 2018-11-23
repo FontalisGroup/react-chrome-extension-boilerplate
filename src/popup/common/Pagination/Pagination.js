@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { filterValidPages, getVisiblePages } from '../../../util/helpers';
 
 const defaultButton = props => <button {...props}>{props.children}</button>;
@@ -76,5 +77,12 @@ class Pagination extends React.Component {
     );
   }
 }
+
+Pagination.propTypes = {
+  pages: PropTypes.number,
+  page: PropTypes.number,
+  PageButtonComponent: PropTypes.node,
+  onPageChange: PropTypes.func
+};
 
 export default Pagination;

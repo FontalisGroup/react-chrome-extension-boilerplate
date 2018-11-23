@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import isEmpty from 'lodash/isEmpty';
 import { NavLink } from 'react-router-dom';
 import i18n from '../../../i18n/index';
@@ -18,6 +19,15 @@ const Navigation = ({ navigation, isAuthenticated }) => {
       )}
     </div>
   );
+};
+
+Navigation.propTypes = {
+  navigation: PropTypes.arrayOf({
+    to: PropTypes.string,
+    text: PropTypes.string,
+    authRequired: PropTypes.bool
+  }),
+  isAuthenticated: PropTypes.bool
 };
 
 export default Navigation;

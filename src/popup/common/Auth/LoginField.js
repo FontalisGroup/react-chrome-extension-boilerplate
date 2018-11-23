@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ValidationInput from '../Validation/ValidationInput';
 import { required } from '../../../validation/rules';
@@ -18,6 +19,13 @@ const LoginField = ({ value, error, onChange, labelText, ...props }) => {
       <ErrorMessage error={error} />
     </React.Fragment>
   );
+};
+
+LoginField.propTypes = {
+  value: PropTypes.string,
+  error: PropTypes.string,
+  onChange: PropTypes.func,
+  labelText: PropTypes.string
 };
 
 export default LoginField;

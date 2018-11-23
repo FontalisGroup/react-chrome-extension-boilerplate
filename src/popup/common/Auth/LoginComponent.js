@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { clearErrors, requestLogIn } from '../../../redux/actions/userActions';
@@ -116,6 +117,13 @@ class LoginComponent extends Component {
     );
   }
 }
+
+LoginComponent.propTypes = {
+  error: PropTypes.string,
+  isFetching: PropTypes.bool,
+  requestLogIn: PropTypes.func,
+  clearErrors: PropTypes.func
+};
 
 const mapStateToProps = state => {
   return {
