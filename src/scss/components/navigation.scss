@@ -1,0 +1,14 @@
+.app-nav-container {
+  display: flex;
+  & .app-nav {
+    padding: 5px 10px;
+    background: #a56c6e;
+    text-decoration: none;
+    color: #000;
+    flex: 1;
+
+    &.active {
+      background: antiquewhite;
+    }
+  }
+}

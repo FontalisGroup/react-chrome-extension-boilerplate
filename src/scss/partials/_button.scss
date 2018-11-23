@@ -1,0 +1,12 @@
+.my-app-btn{
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid $blue-color;
+
+  &.my-app-btn-outline-blue {
+    &:hover {
+      background: $blue-color;
+      color: $white-color;
+    }
+  }
+}
