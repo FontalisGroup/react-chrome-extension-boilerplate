@@ -51,7 +51,7 @@ class ValidationInput extends Component {
 
 ValidationInput.propTypes = {
   externalError: PropTypes.string,
-  validate: PropTypes.array(PropTypes.func),
+  validate: PropTypes.arrayOf(PropTypes.func),
   name: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func
