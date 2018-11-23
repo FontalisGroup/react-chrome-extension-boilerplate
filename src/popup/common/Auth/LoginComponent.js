@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { clearErrors, requestLogIn } from '../../../redux/actions/userActions';
-import i18n from '../../../i18n';
-import ErrorMessage from '../../components/common/Validation/ErrorMessage';
-import ValidationForm from '../../components/common/Validation/ValidationForm';
+import i18n from '../../../i18n/index';
+import ErrorMessage from '../Validation/ErrorMessage';
+import ValidationForm from '../Validation/ValidationForm';
 import LoginField from './LoginField';
 import { populateFieldsOnError } from '../../../util/helpers';
-import LoadingComponent from '../../components/common/Loader/LoadingComponent';
+import LoadingComponent from '../Loader/LoadingComponent';
 
 class LoginComponent extends Component {
   constructor(props) {
@@ -63,7 +63,11 @@ class LoginComponent extends Component {
     const { hasErrors } = this.state;
 
     return (
-      <button onClick={onSubmit} disabled={hasErrors}>
+      <button
+        onClick={onSubmit}
+        disabled={hasErrors}
+        className="my-app-btn my-app-btn-outline-blue"
+      >
         {isFetching ? <LoadingComponent /> : i18n.t('AUTH.SUBMIT')}
       </button>
     );

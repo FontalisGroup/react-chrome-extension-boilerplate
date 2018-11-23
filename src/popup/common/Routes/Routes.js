@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { MemoryRouter, Route } from 'react-router';
 import { connect } from 'react-redux';
-import LoginComponent from '../Login/LoginComponent';
-import Navigation from '../../components/common/Navigation/Navigation';
-import LogoutComponent from '../Login/LogoutComponent';
+import LoginComponent from '../Auth/LoginComponent';
+import Navigation from '../Navigation/Navigation';
+import LogoutComponent from '../Auth/LogoutComponent';
 import { routes } from './routeConfig';
 
 class Routes extends Component {

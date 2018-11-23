@@ -1,8 +1,8 @@
 import React from 'react';
 import isEmpty from 'lodash/isEmpty';
 import { NavLink } from 'react-router-dom';
-import i18n from '../../../../i18n/index';
-import { defaultNavigation } from '../../../container/Routes/routeConfig';
+import i18n from '../../../i18n/index';
+import { defaultNavigation } from '../Routes/routeConfig';
 
 const Navigation = ({ navigation, isAuthenticated }) => {
   const nav = !isEmpty(navigation) ? navigation : defaultNavigation;
@@ -11,7 +11,7 @@ const Navigation = ({ navigation, isAuthenticated }) => {
       {nav.map(
         ({ to, text, authRequired }) =>
           authRequired && !isAuthenticated ? null : (
-            <NavLink to={to} className="app-nav">
+            <NavLink key={to} to={to} className="app-nav">
               {i18n.t(text)}
             </NavLink>
           )

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ValidationInput from '../../components/common/Validation/ValidationInput';
+import ValidationInput from '../Validation/ValidationInput';
 import { required } from '../../../validation/rules';
-import ErrorMessage from '../../components/common/Validation/ErrorMessage';
+import ErrorMessage from '../Validation/ErrorMessage';
 
 const LoginField = ({ value, error, onChange, labelText, ...props }) => {
   return (

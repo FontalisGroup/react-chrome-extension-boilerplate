@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import isEmpty from 'lodash/isEmpty';
-import { logError } from '../../../../util/util';
-import composeValidation from '../../../../validation/composeValidation';
+import { logError } from '../../../util/util';
+import composeValidation from '../../../validation/composeValidation';
 
 class ValidationForm extends React.Component {
   state = {

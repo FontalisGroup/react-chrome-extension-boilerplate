@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import composeValidation from '../../../../validation/composeValidation';
+import composeValidation from '../../../validation/composeValidation';
 import classNames from 'classnames';
 
 class ValidationInput extends Component {

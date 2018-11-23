@@ -1,5 +1,5 @@
 import React from 'react';
-import { filterValidPages, getVisiblePages } from '../../../../util/helpers';
+import { filterValidPages, getVisiblePages } from '../../../util/helpers';
 
 const defaultButton = props => <button {...props}>{props.children}</button>;
 

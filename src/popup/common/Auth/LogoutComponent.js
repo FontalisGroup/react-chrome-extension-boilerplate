@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { requestLogOut } from '../../../redux/actions/userActions';
-import i18n from '../../../i18n';
+import i18n from '../../../i18n/index';
 
 class LogoutComponent extends Component {
   handleLogout = () => {

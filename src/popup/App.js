@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Routes from './container/Routes/Routes';
+import Routes from './common/Routes/Routes';
 import Bootstrapper from './Bootstrapper';
 
 class App extends Component {
