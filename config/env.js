@@ -12,14 +12,6 @@ if (!NODE_ENV) {
   throw new Error('The NODE_ENV environment variable is required but was not specified.');
 }
 
-const NODE_PATH = process.env.NODE_PATH;
-if (!NODE_PATH) {
-  console.log(process.env);
-  throw new Error(
-    'The NODE_PATH environment variable is required to enable absolute imports. Check if you have added it to .env file'
-  );
-}
-
 // https://github.com/bkeepers/dotenv#what-other-env-files-can-i-use
 var dotenvFiles = [
   `${paths.dotenv}.${NODE_ENV}.local`,
